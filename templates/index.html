@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Kafka Stream</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f9fb; }
+      .app-shell { max-width: 1200px; margin: 0 auto; padding: 24px; }
+      h1 { margin-bottom: 12px; }
+      .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+      .tab { padding: 10px 16px; border: 1px solid #ccc; border-radius: 6px; background: white; cursor: pointer; }
+      .tab.active { background: #1976d2; color: white; border-color: #1976d2; }
+      .status { margin-bottom: 16px; color: #333; }
+      table { width: 100%; border-collapse: collapse; background: white; }
+      th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e0e0e0; }
+      th { background: #f4f6f8; }
+      .comment-input { width: 100%; box-sizing: border-box; padding: 8px; }
+      .save-button { padding: 8px 12px; border: 1px solid #1976d2; background: #1976d2; color: white; border-radius: 4px; cursor: pointer; }
+      .save-button:disabled { opacity: 0.6; cursor: not-allowed; }
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <h1>Stock Stream Kafka Viewer</h1>
+      <div class="status" id="status">Loading topics...</div>
+      <div class="tabs" id="topic-tabs"></div>
+      <div id="message-board"></div>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
